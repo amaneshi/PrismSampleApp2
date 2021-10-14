@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:vm="clr-namespace:PrismSampleApp.ViewModels"
+             x:DataType="vm:HomePageViewModel"
+             x:Class="PrismSampleApp.Views.HomePage"
+             Title="{Binding Title}">
+
+    <Frame BorderColor="Black" Margin="2" Padding="5">
+        <StackLayout>
+            <Label Text="Home Page content here..." />
+            <Button Text="Show Dialog" Command="{Binding OpenSessionCommand}" />
+        </StackLayout>
+    </Frame>
+
+</ContentPage>

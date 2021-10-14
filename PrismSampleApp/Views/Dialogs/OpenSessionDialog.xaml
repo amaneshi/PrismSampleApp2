@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Frame xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:prism="http://prismlibrary.com"
+       xmlns:vmd="clr-namespace:PrismSampleApp.ViewModels.Dialogs"
+       prism:DialogLayout.RelativeWidthRequest="0.5"
+       prism:DialogLayout.RelativeHeightRequest="0.5"
+       prism:DialogLayout.CloseOnBackgroundTapped="True"
+       x:Class="PrismSampleApp.Views.Dialogs.OpenSessionDialog"
+       x:DataType="vmd:OpenSessionDialogViewModel"
+       x:Name="DialogView"
+       BackgroundColor="White"
+       CornerRadius="20"
+       HasShadow="True">
+    <StackLayout>
+        <Label Text="Dialog content here." />
+        <Button Text="Submit(Close) dialog" Command="{Binding SubmitCommand}" />
+    </StackLayout>
+</Frame>
